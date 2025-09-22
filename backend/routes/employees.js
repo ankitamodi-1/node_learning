@@ -24,16 +24,24 @@ router.get('/:id', protect, getEmployee);
 // @route   POST /api/employees
 // @desc    Create new employee
 // @access  Private (Admin only)
-router.post('/', protect, adminOnly, validateEmployee, createEmployee);
+router.post('/', protect, validateEmployee, createEmployee);
+
 
 // @route   PUT /api/employees/:id
 // @desc    Update employee
 // @access  Private (Admin only)
-router.put('/:id', protect, adminOnly, validateEmployeeUpdate, updateEmployee);
+router.put('/:id', protect, validateEmployeeUpdate, updateEmployee);
 
 // @route   DELETE /api/employees/:id
 // @desc    Soft delete employee
 // @access  Private (Admin only)
+router.delete('/:id', protect, deleteEmployee);
+
+
+/*
+router.post('/', protect, adminOnly, validateEmployee, createEmployee);///if admin then only 
+router.put('/:id', protect, adminOnly, validateEmployeeUpdate, updateEmployee);
 router.delete('/:id', protect, adminOnly, deleteEmployee);
+*/
 
 module.exports = router;
