@@ -65,16 +65,25 @@ export default function EmployeeForm() {
           <input type="number" step="0.01" {...register('salary')} />
           {errors.salary && <span className="error">{errors.salary.message}</span>}
         </label>
-        <fieldset className="fieldset">
-          <legend>Is Manager</legend>
-          <label className="inline">
-            <input type="radio" value="true" {...register('is_manager', { setValueAs: (v) => v === 'true' })} /> Yes
-          </label>
-          <label className="inline">
-            <input type="radio" value="false" {...register('is_manager', { setValueAs: (v) => v === 'true' })} /> No
-          </label>
-          {errors.is_manager && <span className="error">{errors.is_manager.message}</span>}
-        </fieldset>
+        <fieldset>
+        <legend>Is Manager</legend>
+        <label>
+          <input
+            type="radio"
+            value="true"
+            {...register('is_manager', { setValueAs: v => v === 'true' })}
+            defaultChecked={false} // optional, React Hook Form will handle it
+          /> Yes
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="false"
+            {...register('is_manager', { setValueAs: v => v === 'true' })}
+            defaultChecked={true} // optional
+          /> No
+        </label>
+      </fieldset>
         <label>
           DOB
           <Controller
