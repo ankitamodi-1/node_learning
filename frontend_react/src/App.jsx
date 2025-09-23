@@ -13,7 +13,7 @@ export default function App() {
       <Navbar />
       <main style={{ padding: 16 }}>
         <Routes>
-          <Route path="/" element={<EmployeesList />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
 
