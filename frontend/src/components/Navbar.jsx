@@ -11,15 +11,16 @@ export default function Navbar() {
         <Link to="/" className="brand">Employees</Link>
       </div>
       <div className="nav-right">
-        <NavLink to="/employees" className="nav-link">Employees</NavLink>
+        <NavLink to="/employees" className="nav-link">++Employees extra++</NavLink>
         {!isAuthenticated && (
-          <>
+          <>          
             <NavLink to="/signup" className="nav-link">Signup</NavLink>
             <NavLink to="/login" className="nav-link">Login</NavLink>
           </>
         )}
         {isAuthenticated && (
           <>
+            <NavLink to="/employees" className="nav-link">Employees</NavLink>
             <NavLink to="/employees/new" className="nav-link">Add Employee</NavLink>
             <button className="btn" onClick={logout}>Logout</button>
           </>

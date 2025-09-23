@@ -18,7 +18,7 @@ export default function Login() {
 
   const onSubmit = async (data) => {
     const res = await api.post('/api/auth/login', data)    
-    const { token } = res.data.data.token
+    const  token  = res.data.data.token
     setToken(token)    
     localStorage.setItem("token", res.data.data.token);
 
