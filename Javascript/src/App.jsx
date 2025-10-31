@@ -8,7 +8,8 @@ import SetEg from './components/SetEg.jsx'
 import Factorial from './components/Factorial.jsx'
 import CapitalizeChar from './components/CapitalizeChar.jsx'
 import CheckPrime from './components/CheckPrime.jsx'
-
+import CountOccurenceString from './components/CountOccurenceString.jsx'
+import CountVowelConsonent from './components/CountVowelConsonent.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,7 +22,9 @@ function App() {
       {/* <SetEg /> */}
       {/* <Factorial /> */}
       {/* <CapitalizeChar /> */}
-      <CheckPrime />  
+      {/* <CheckPrime />   */}
+      {/* <CountOccurenceString /> */}
+      <CountVowelConsonent /> 
     </>
   )
 }
