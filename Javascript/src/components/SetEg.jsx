@@ -26,7 +26,7 @@ export default function SetEg() {
   }
   
    // Clear
-    mySet.clear();
+  mySet.clear();
   console.log(mySet.size); // 0
   return (
     <div>Set</div>

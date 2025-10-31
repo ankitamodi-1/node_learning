@@ -5,6 +5,10 @@ import Palindrome from './components/Palindrome.jsx'
 import Fibonacii from './components/Fibonacii.jsx'
 import SeprateNumber from './components/SeprateNumber.jsx'
 import SetEg from './components/SetEg.jsx'  
+import Factorial from './components/Factorial.jsx'
+import CapitalizeChar from './components/CapitalizeChar.jsx'
+import CheckPrime from './components/CheckPrime.jsx'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,7 +18,10 @@ function App() {
       {/* <Palindrome number={201102} str={"ankita"} /> */}
       {/* <Fibonacii />  */}
       {/* <SeprateNumber /> */}
-      <SetEg />
+      {/* <SetEg /> */}
+      {/* <Factorial /> */}
+      {/* <CapitalizeChar /> */}
+      <CheckPrime />  
     </>
   )
 }
