@@ -13,6 +13,10 @@ import CountVowelConsonent from './components/CountVowelConsonent.jsx'
 import FindLargestNumber from './components/FindLargestNumber.jsx'
 import MergeTwoSortedArray from './components/MergeTwoSortedArray.jsx'
 import MissingNumberInArray from './components/MissingNumberInArray.jsx'  
+import RemoveDuplicatesFromArray from './components/RemoveDuplicatesFromArray.jsx'
+import ReverseWord from './components/ReverseWord.jsx'
+import SecondLargestNumber from './components/SecondLargestNumber.jsx'
+import StringsAnagrams from './components/StringsAnagrams.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -30,7 +34,11 @@ function App() {
       {/* <CountVowelConsonent />  */}
       {/* <FindLargestNumber />  */}
       {/* <MergeTwoSortedArray /> */}
-      <MissingNumberInArray />
+      {/* <MissingNumberInArray /> */}
+      {/* <RemoveDuplicatesFromArray /> */}
+      {/* <ReverseWord /> */}
+      {/* <SecondLargestNumber /> */}
+      <StringsAnagrams/>
     </>
   )
 }
