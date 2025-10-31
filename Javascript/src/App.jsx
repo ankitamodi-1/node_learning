@@ -17,6 +17,9 @@ import RemoveDuplicatesFromArray from './components/RemoveDuplicatesFromArray.js
 import ReverseWord from './components/ReverseWord.jsx'
 import SecondLargestNumber from './components/SecondLargestNumber.jsx'
 import StringsAnagrams from './components/StringsAnagrams.jsx'
+import RotateArrayKPositions from './components/RotateArrayKPositions.jsx'
+import MultiArrToSingleArr from './components/MultiArrToSingleArr'
+import StringMatching from './components/StringMatching.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -38,7 +41,10 @@ function App() {
       {/* <RemoveDuplicatesFromArray /> */}
       {/* <ReverseWord /> */}
       {/* <SecondLargestNumber /> */}
-      <StringsAnagrams/>
+      {/* <StringsAnagrams/> */}
+      {/* <RotateArrayKPositions/> */}
+      {/* <MultiArrToSingleArr/> */}
+      <StringMatching/>
     </>
   )
 }
