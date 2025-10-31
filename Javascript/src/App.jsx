@@ -10,6 +10,9 @@ import CapitalizeChar from './components/CapitalizeChar.jsx'
 import CheckPrime from './components/CheckPrime.jsx'
 import CountOccurenceString from './components/CountOccurenceString.jsx'
 import CountVowelConsonent from './components/CountVowelConsonent.jsx'
+import FindLargestNumber from './components/FindLargestNumber.jsx'
+import MergeTwoSortedArray from './components/MergeTwoSortedArray.jsx'
+import MissingNumberInArray from './components/MissingNumberInArray.jsx'  
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,7 +27,10 @@ function App() {
       {/* <CapitalizeChar /> */}
       {/* <CheckPrime />   */}
       {/* <CountOccurenceString /> */}
-      <CountVowelConsonent /> 
+      {/* <CountVowelConsonent />  */}
+      {/* <FindLargestNumber />  */}
+      {/* <MergeTwoSortedArray /> */}
+      <MissingNumberInArray />
     </>
   )
 }
