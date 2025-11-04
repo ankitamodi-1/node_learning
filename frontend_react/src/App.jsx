@@ -5,6 +5,9 @@ import Login from './pages/Login'
 import EmployeesList from './pages/EmployeesList'
 import EmployeeForm from './pages/EmployeeForm'
 import ProtectedRoute from './components/ProtectedRoute'
+import CustomeHook from './pages/CustomeHook.jsx'
+
+import CustomHookWithPagincation from './pages/CustomHookWithPagincation.jsx'
 import './App.css'
 
 export default function App() {
@@ -16,7 +19,10 @@ export default function App() {
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-
+          <Route path="/customeHook" element={<CustomeHook />} />
+          <Route path="/CustomHookWithPagincation" element={<CustomHookWithPagincation />} />
+          
+          
           <Route element={<ProtectedRoute />}>
             <Route path="/employees" element={<EmployeesList />} />
             <Route path="/employees/new" element={<EmployeeForm />} />

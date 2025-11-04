@@ -12,6 +12,8 @@ export default function Navbar() {
       </div>
       <div className="nav-right">
         <NavLink to="/employees" className="nav-link">++Employees extra++</NavLink>
+        <NavLink to="/customeHook" className="nav-link">Custom Hook</NavLink>
+        <NavLink to="/CustomHookWithPagincation" className="nav-link">Custom Hook Pagination</NavLink>
         {!isAuthenticated && (
           <>          
             <NavLink to="/signup" className="nav-link">Signup</NavLink>
