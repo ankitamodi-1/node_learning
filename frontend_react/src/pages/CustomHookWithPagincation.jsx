@@ -2,6 +2,10 @@ import { usePaginatedFetch } from "../hooks/usePaginatedFetch";
 
 function CustomHookWithPagincation() {
     
+     
+     localStorage.setItem("local_name", "ankita")
+     sessionStorage.setItem("session_name", "ankita")
+     
   const {
     data: posts,
     loading,

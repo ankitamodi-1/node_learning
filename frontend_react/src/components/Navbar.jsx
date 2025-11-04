@@ -14,6 +14,7 @@ export default function Navbar() {
         <NavLink to="/employees" className="nav-link">++Employees extra++</NavLink>
         <NavLink to="/customeHook" className="nav-link">Custom Hook</NavLink>
         <NavLink to="/CustomHookWithPagincation" className="nav-link">Custom Hook Pagination</NavLink>
+        <NavLink to="/DebounceExample" className="nav-link">DebounceExample</NavLink>
         {!isAuthenticated && (
           <>          
             <NavLink to="/signup" className="nav-link">Signup</NavLink>
